@@ -58,12 +58,45 @@ Sistema de alimentacion de ganado para integracion en salas de ordeño en proces
     - [Referencias](#93-referencias)
 
 ## 1. Introducción
-Lazarus es un proyecto de desarroyo de hardware para laimplementacion de un sistema de alimentacion de ganado. 
-En este repositorio se presenta su primera construccion de softare versionado. 
+LAZARUS es un proyecto de desarroyo de hardware para la implementacion de un sistema de alimentacion de ganado. 
+ El sistema esta pensado para satisfacer la necesidad de automatizacion de registros de un negocio de lecheria que inicia con el proceso de automatizacion con orientacion a certificacion y optimizacion en los proceso de produccion.
+ En este repositorio LAZARUS presenta su primera version de software estable.
 
 ### 1.1. Descripción del Proyecto
+
+LAZARUS implementa un sistema de automatizacion de alimentacion de ganado lechero.
+
 ### 1.2. Objetivos
+
+Dotar al pequeño y mediano productor de leche con un mecanismo que le permite la facil implementacion de sistemas de gestion de la calidad en su proyecto lechero, con orientacion a la cerficicaion de su negocio en este aspecto de los sistemas de gestion.
+
 ### 1.3. Alcance
+
+#### 1.3.1 Conectividad y Acceso
+- El sistema puede conectarse a una red Wi-Fi especificada por el usuario.
+- El sistema puede exponer su servicio a un DNS privado para ser encontrado por el usuario como LAZARUS.LOCAL en su navegador de internet.
+
+#### 1.3.2 Gestión de Usuarios
+- El sistema permite ingresar a un usuario con el rol de administrador únicamente mediante el uso de su correo y contraseña registrados en la aplicación mediante su dispositivo de trabajo, o un pin en el teclado
+- El sistema permite ingresar a un trabajador mediante el uso de su correo y contraseña en su dispositivo de trabajo, o un pin en el teclado.
+- El usuario administrador puede crear usuarios trabajadores.
+
+#### 1.3.3 Gestión de Ganado
+- El usuario administrador puede registrar animales nuevos y dar de baja a animales del registro.
+- El usuario administrador puede descargar los registros en formato Excel a su computadora o celular.
+- El usuario administrador puede modificar el factor de cantidad de concentrado de una cabeza de ganado usando su dispositivo de trabajo o su pin y el teclado.
+- El usuario trabajador puede ordenar la alimentación de una cabeza específica de ganado mediante el uso del teclado o el dispositivo de trabajo.
+- El usuario trabajador puede configurar la cantidad de concentrado dispensado de una cabeza específica de ganado usando el teclado del dispositivo o su dispositivo de trabajo.
+- El usuario trabajador puede solicitar adiciones a la dispensación de alimento para una cabeza de ganado específica, usando el teclado o el dispositivo de trabajo.
+- El usuario trabajador puede ingresar el registro de producción de una vaca mediante el teclado o dispositivo de trabajo.
+- El usuario trabajador puede ingresar un registro de historial médico mediante el uso de su dispositivo de trabajo.
+- El usuario trabajador puede ingresar un registro de estado (peso, preñez, partos, retiros) mediante el uso de su dispositivo de trabajo.
+
+#### 1.3.4 Funcionalidades del Sistema
+- El sistema registra el tiempo de permanencia de una vaca en el comedero.
+- El sistema lanza alertas de vaca en retiro, o orden de aplicación de medicamento, toma de peso, o palpación en el momento de ingreso del animal al comedero.
+- El sistema puede sugerir un orden de ordeño, dejando a las vacas con necesidades especiales de cuidado para el final del ordeño.
+- El sistema lanza alertas de servicio de inseminación y sincronización en el momento de ingreso del animal.
 
 ## 2. Requisitos del Sistema
 ### 2.1. Requisitos de Hardware
